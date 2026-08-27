@@ -1,0 +1,886 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #172554 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #0e7490 0%, transparent 30%),
+        #020617;
+
+    color: #e2e8f0;
+
+    line-height: 1.7;
+
+    min-height: 100vh;
+
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+header {
+
+    position: relative;
+
+    text-align: center;
+
+    padding: 80px 20px 70px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(15, 23, 42, 0.95),
+            rgba(30, 41, 59, 0.88)
+        );
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+
+    overflow: hidden;
+
+}
+
+
+/* Efecto luminoso */
+
+header::before {
+
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    background: #06b6d4;
+
+    border-radius: 50%;
+
+    filter: blur(120px);
+
+    opacity: 0.15;
+
+    top: -150px;
+    left: 10%;
+
+}
+
+
+/* Título */
+
+.logo {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.titulo-principal {
+
+    font-size: clamp(2.3rem, 6vw, 4.5rem);
+
+    font-weight: 800;
+
+    letter-spacing: -2px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #22d3ee,
+            #60a5fa,
+            #a78bfa
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.subtitulo {
+
+    font-size: clamp(1.1rem, 3vw, 1.7rem);
+
+    color: #cbd5e1;
+
+    margin-top: 5px;
+
+    font-weight: 500;
+
+}
+
+
+header p {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 800px;
+
+    margin: 25px auto 0;
+
+    color: #94a3b8;
+
+    font-size: 1.05rem;
+
+}
+
+
+/* =========================================
+   MENÚ
+========================================= */
+
+.menu {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    padding: 14px 20px;
+
+    background: rgba(2, 6, 23, 0.85);
+
+    backdrop-filter: blur(18px);
+
+    -webkit-backdrop-filter: blur(18px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}
+
+
+.menu a {
+
+    color: #cbd5e1;
+
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border-radius: 10px;
+
+    font-size: 0.92rem;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.menu a:hover {
+
+    color: white;
+
+    background: rgba(34, 211, 238, 0.12);
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   CONTENEDOR
+========================================= */
+
+.container {
+
+    width: min(1150px, 92%);
+
+    margin: 50px auto;
+
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.card {
+
+    position: relative;
+
+    margin-bottom: 35px;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(15, 23, 42, 0.92),
+            rgba(30, 41, 59, 0.75)
+        );
+
+    border: 1px solid rgba(148, 163, 184, 0.12);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.25);
+
+    backdrop-filter: blur(15px);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+}
+
+
+.card:hover {
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.35);
+
+}
+
+
+/* Línea decorativa */
+
+.card::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 30px;
+
+    width: 4px;
+
+    height: 55px;
+
+    border-radius: 0 10px 10px 0;
+
+    background:
+        linear-gradient(
+            #22d3ee,
+            #6366f1
+        );
+
+}
+
+
+/* =========================================
+   TÍTULOS
+========================================= */
+
+.card h2 {
+
+    margin-bottom: 25px;
+
+    font-size: 1.8rem;
+
+    color: #f8fafc;
+
+    font-weight: 750;
+
+}
+
+
+.card h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 55px;
+
+    height: 3px;
+
+    margin-top: 8px;
+
+    border-radius: 5px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #22d3ee,
+            #6366f1
+        );
+
+}
+
+
+.card h3 {
+
+    color: #67e8f9;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================================
+   TEXTO
+========================================= */
+
+.card p {
+
+    margin-bottom: 18px;
+
+    color: #cbd5e1;
+
+}
+
+
+.card strong {
+
+    color: #67e8f9;
+
+    font-size: 1.05rem;
+
+}
+
+
+.instruccion {
+
+    padding: 12px 16px;
+
+    border-radius: 10px;
+
+    background: rgba(34, 211, 238, 0.08);
+
+    border: 1px solid rgba(34, 211, 238, 0.15);
+
+    color: #67e8f9 !important;
+
+}
+
+
+/* =========================================
+   LISTAS
+========================================= */
+
+.card ul {
+
+    list-style: none;
+
+    margin-top: 15px;
+
+}
+
+
+.card li {
+
+    margin-bottom: 12px;
+
+    padding: 12px 15px;
+
+    background: rgba(255,255,255,0.025);
+
+    border-radius: 10px;
+
+    border-left: 2px solid transparent;
+
+    transition: all 0.25s ease;
+
+}
+
+
+.card li:hover {
+
+    border-left-color: #22d3ee;
+
+    background: rgba(34,211,238,0.06);
+
+    transform: translateX(5px);
+
+}
+
+
+/* =========================================
+   MESA DIRECTIVA
+========================================= */
+
+.puestos {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 16px;
+
+    margin-top: 30px;
+
+}
+
+
+.puesto {
+
+    cursor: pointer;
+
+    padding: 22px 15px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(30, 41, 59, 0.9),
+            rgba(15, 23, 42, 0.9)
+        );
+
+    border: 1px solid rgba(148,163,184,0.15);
+
+    border-radius: 15px;
+
+    color: #e2e8f0;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.puesto span {
+
+    display: block;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 5px;
+
+}
+
+
+.puesto:hover {
+
+    transform: translateY(-7px);
+
+    border-color: #22d3ee;
+
+    box-shadow:
+        0 12px 30px rgba(34,211,238,0.15);
+
+    color: #67e8f9;
+
+}
+
+
+/* =========================================
+   INFORMACIÓN DE CARGOS
+========================================= */
+
+.info {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 25px;
+
+    background: rgba(8, 47, 73, 0.35);
+
+    border: 1px solid rgba(34,211,238,0.2);
+
+    border-radius: 15px;
+
+    animation: aparecer 0.35s ease;
+
+}
+
+
+.info ul {
+
+    margin-top: 10px;
+
+}
+
+
+.info li {
+
+    background: transparent;
+
+    border-left: none;
+
+    padding: 8px 0;
+
+}
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-10px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.botones {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+
+.btn,
+.btn-reglamento {
+
+    display: inline-block;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 10px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.btn {
+
+    color: white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0891b2,
+            #4f46e5
+        );
+
+    box-shadow:
+        0 8px 20px rgba(79,70,229,0.25);
+
+}
+
+
+.btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 30px rgba(79,70,229,0.4);
+
+}
+
+
+.btn-reglamento {
+
+    margin-top: 12px;
+
+    color: #67e8f9;
+
+    background: rgba(34,211,238,0.08);
+
+    border: 1px solid rgba(34,211,238,0.25);
+
+}
+
+
+.btn-reglamento:hover {
+
+    background: rgba(34,211,238,0.15);
+
+    color: white;
+
+}
+
+
+/* =========================================
+   NOTA
+========================================= */
+
+.nota {
+
+    margin-top: 20px;
+
+    padding: 15px 18px;
+
+    border-left: 3px solid #22d3ee;
+
+    background: rgba(34,211,238,0.05);
+
+}
+
+
+/* =========================================
+   TABLA
+========================================= */
+
+.tabla-contenedor {
+
+    margin-top: 25px;
+
+    overflow-x: auto;
+
+    border-radius: 15px;
+
+    border: 1px solid rgba(148,163,184,0.12);
+
+}
+
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 800px;
+
+}
+
+
+thead {
+
+    background:
+        linear-gradient(
+            135deg,
+            #164e63,
+            #312e81
+        );
+
+}
+
+
+th {
+
+    padding: 18px;
+
+    color: white;
+
+    text-align: left;
+
+    font-size: 0.9rem;
+
+}
+
+
+td {
+
+    padding: 17px;
+
+    border-top: 1px solid rgba(148,163,184,0.1);
+
+    color: #cbd5e1;
+
+    vertical-align: top;
+
+}
+
+
+tbody tr {
+
+    transition: background 0.25s ease;
+
+}
+
+
+tbody tr:hover {
+
+    background: rgba(34,211,238,0.05);
+
+}
+
+
+td strong {
+
+    color: #67e8f9;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+
+    text-align: center;
+
+    padding: 45px 20px;
+
+    margin-top: 70px;
+
+    background: #020617;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    color: #94a3b8;
+
+}
+
+
+.footer p {
+
+    margin-bottom: 6px;
+
+}
+
+
+.footer p:first-child {
+
+    color: #e2e8f0;
+
+    font-weight: 700;
+
+}
+
+
+.copyright {
+
+    margin-top: 18px;
+
+    font-size: 0.85rem;
+
+    color: #64748b;
+
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .puestos {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    header {
+
+        padding: 55px 18px;
+
+    }
+
+
+    .menu {
+
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        flex-wrap: nowrap;
+
+    }
+
+
+    .menu a {
+
+        white-space: nowrap;
+
+        font-size: 0.85rem;
+
+    }
+
+
+    .container {
+
+        width: 94%;
+
+        margin-top: 30px;
+
+    }
+
+
+    .card {
+
+        padding: 28px 22px;
+
+        border-radius: 17px;
+
+    }
+
+
+    .puestos {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .botones {
+
+        flex-direction: column;
+
+    }
+
+
+    .btn {
+
+        text-align: center;
+
+    }
+
+
+    .card h2 {
+
+        font-size: 1.5rem;
+
+    }
+
+}
+
