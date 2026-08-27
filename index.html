@@ -1,469 +1,662 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Capítulo Estudiantil | Sistemas</title>
+        <title>Capítulo Estudiantil | Sistemas</title>
 
-    <link rel="stylesheet" href="estilo.css">
+        <link rel="stylesheet" href="estilo.css">
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <!-- ENCABEZADO -->
+        <!-- ENCABEZADO -->
 
-    <header>
+        <header>
 
-        <div class="logo">
+            <div class="logo">
 
-            <div class="titulo-principal">
-                Capítulo Estudiantil
-            </div>
-
-            <div class="subtitulo">
-                Ingeniería en Sistemas Computacionales
-            </div>
-
-        </div>
-
-        <p>
-            Una comunidad de estudiantes apasionados por la tecnología,
-            la innovación, la programación y el desarrollo profesional.
-        </p>
-
-    </header>
-
-
-    <!-- MENÚ -->
-
-    <nav class="menu">
-
-        <a href="#nosotros">Información</a>
-        <a href="#actividades">Actividades</a>
-        <a href="#mesa">Mesa Directiva</a>
-        <a href="#requisitos">Requisitos</a>
-        <a href="#plan">Plan de Trabajo</a>
-        <a href="#calendario">Calendario</a>
-
-    </nav>
-
-
-    <!-- CONTENIDO -->
-
-    <div class="container">
-
-        <!-- NOSOTROS -->
-
-        <div class="card" id="nosotros">
-
-            <h2>Información General</h2>
-
-            <p><strong>¿Qué es un Capítulo Estudiantil?</strong></p>
-
-            <p>
-                Es una organización integrada principalmente por estudiantes
-                de una institución educativa y de un área profesional específica,
-                que busca complementar la formación académica mediante actividades
-                técnicas, profesionales, culturales y de integración.
-            </p>
-
-            <p>
-                Representa un espacio donde los estudiantes pueden aprender,
-                compartir conocimientos, desarrollar proyectos tecnológicos,
-                participar en eventos y adquirir experiencia en liderazgo
-                y trabajo en equipo.
-            </p>
-
-            <p><strong>¿Cuál es su propósito?</strong></p>
-
-            <p>
-                El propósito principal de un Capítulo Estudiantil es fortalecer
-                la formación integral de los estudiantes, brindándoles oportunidades
-                para desarrollar conocimientos y habilidades que serán importantes
-                en su vida académica y profesional.
-            </p>
-
-        </div>
-
-
-        <!-- ACTIVIDADES -->
-
-        <div class="card" id="actividades">
-
-            <h2>¿Qué actividades realiza un Capítulo Estudiantil?</h2>
-
-            <p>
-                Entre sus principales actividades están:
-            </p>
-
-            <ul>
-
-                <li>💻 Organizar talleres y cursos de programación, redes,
-                    bases de datos e inteligencia artificial.</li>
-
-                <li>🎤 Realizar conferencias y seminarios con profesores
-                    y profesionales de la industria.</li>
-
-                <li>🏆 Organizar concursos, hackatones y competencias.</li>
-
-                <li>🤝 Promover la integración entre estudiantes de la carrera.</li>
-
-                <li>🚀 Desarrollar proyectos tecnológicos.</li>
-
-                <li>📚 Apoyar a los estudiantes en su formación académica
-                    y profesional.</li>
-
-                <li>🌐 Participar en eventos y actividades de organizaciones
-                    profesionales.</li>
-
-                <li>👥 Crear oportunidades para desarrollar liderazgo,
-                    trabajo en equipo y organización.</li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- MESA DIRECTIVA -->
-
-        <div class="card" id="mesa">
-
-            <h2>¿Cómo puedo organizarlo?</h2>
-
-            <p>
-                Formar una Mesa Directiva la cual estará a cargo del
-                Capítulo Estudiantil conformada por 8 integrantes,
-                procurando una participación equitativa entre hombres
-                y mujeres, promoviendo la inclusión y diversidad.
-            </p>
-
-            <p class="instruccion">
-                👆 Da clic en cada cargo para conocer sus funciones.
-            </p>
-
-
-            <div class="puestos">
-
-                <div class="puesto" onclick="mostrarInfo('presidente')">
-                    <span>👤</span>
-                    Presidente(a)
+                <div class="titulo-principal">
+                    Capítulo Estudiantil
                 </div>
 
-                <div class="puesto" onclick="mostrarInfo('vice')">
-                    <span>🤝</span>
-                    Vicepresidente(a)
-                </div>
-
-                <div class="puesto" onclick="mostrarInfo('secretario')">
-                    <span>📝</span>
-                    Secretario(a)
-                </div>
-
-                <div class="puesto" onclick="mostrarInfo('tesorero')">
-                    <span>💰</span>
-                    Tesorero(a)
-                </div>
-
-                <div class="puesto" onclick="mostrarInfo('webmaster')">
-                    <span>💻</span>
-                    Web Master
-                </div>
-
-                <div class="puesto" onclick="mostrarInfo('vocal1')">
-                    <span>⭐</span>
-                    Vocal 1
-                </div>
-
-                <div class="puesto" onclick="mostrarInfo('vocal2')">
-                    <span>⭐</span>
-                    Vocal 2
-                </div>
-
-                <div class="puesto" onclick="mostrarInfo('vocal3')">
-                    <span>⭐</span>
-                    Vocal 3
+                <div class="subtitulo">
+                    Ingeniería en Sistemas Computacionales
                 </div>
 
             </div>
 
-            <!-- AQUÍ CONSERVAS TODOS TUS DIV .info -->
+            <p>
+                Una comunidad de estudiantes apasionados por la tecnología,
+                la innovación, la programación y el desarrollo profesional.
+            </p>
 
-            <!-- presidente -->
-            <!-- vice -->
-            <!-- secretario -->
-            <!-- tesorero -->
-            <!-- webmaster -->
-            <!-- vocal1 -->
-            <!-- vocal2 -->
-            <!-- vocal3 -->
-
-        </div>
+        </header>
 
 
-        <!-- REQUISITOS -->
+        <!-- MENÚ -->
 
-        <div class="card" id="requisitos">
+        <nav class="menu">
 
-            <h2>Requisitos</h2>
+            <a href="#nosotros">Información</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#mesa">Mesa Directiva</a>
+            <a href="#requisitos">Requisitos</a>
+            <a href="#plan">Plan de Trabajo</a>
+            <a href="#calendario">Calendario</a>
 
-            <ul>
+        </nav>
 
-                <li>Ser alumno(a) activo y regular de Ingeniería en
-                    Sistemas Computacionales.</li>
 
-                <li>Contar con promedio mínimo de 85.</li>
+        <!-- CONTENIDO -->
 
-                <li>Demostrar liderazgo, iniciativa y responsabilidad.</li>
+        <div class="container">
 
-                <li>Tener habilidades para el trabajo en equipo.</li>
+            <!-- NOSOTROS -->
 
-                <li>
-                    Respetar el Reglamento de Estudiantes del
-                    Tecnológico Nacional de México.
+            <div class="card" id="nosotros">
 
-                    <br>
+                <h2>Información General</h2>
 
-                    <a href="https://www.cdmadero.tecnm.mx/images/PDF/reglamento_estudiantes_tecnm_2023.pdf"
-                       target="_blank"
-                       class="btn-reglamento">
-                        📄 Ver Reglamento
+                <p><strong>¿Qué es un Capítulo Estudiantil?</strong></p>
+
+                <p>
+                    Es una organización integrada principalmente por estudiantes
+                    de una institución educativa y de un área profesional específica,
+                    que busca complementar la formación académica mediante actividades
+                    técnicas, profesionales, culturales y de integración.
+                </p>
+
+                <p>
+                    Representa un espacio donde los estudiantes pueden aprender,
+                    compartir conocimientos, desarrollar proyectos tecnológicos,
+                    participar en eventos y adquirir experiencia en liderazgo
+                    y trabajo en equipo.
+                </p>
+
+                <p><strong>¿Cuál es su propósito?</strong></p>
+
+                <p>
+                    El propósito principal de un Capítulo Estudiantil es fortalecer
+                    la formación integral de los estudiantes, brindándoles oportunidades
+                    para desarrollar conocimientos y habilidades que serán importantes
+                    en su vida académica y profesional.
+                </p>
+
+            </div>
+
+
+            <!-- ACTIVIDADES -->
+
+            <div class="card" id="actividades">
+
+                <h2>¿Qué actividades realiza un Capítulo Estudiantil?</h2>
+
+                <p>
+                    Entre sus principales actividades están:
+                </p>
+
+                <ul>
+
+                    <li>💻 Organizar talleres y cursos de programación, redes,
+                        bases de datos e inteligencia artificial.</li>
+
+                    <li>🎤 Realizar conferencias y seminarios con profesores
+                        y profesionales de la industria.</li>
+
+                    <li>🏆 Organizar concursos, hackatones y competencias.</li>
+
+                    <li>🤝 Promover la integración entre estudiantes de la carrera.</li>
+
+                    <li>🚀 Desarrollar proyectos tecnológicos.</li>
+
+                    <li>📚 Apoyar a los estudiantes en su formación académica
+                        y profesional.</li>
+
+                    <li>🌐 Participar en eventos y actividades de organizaciones
+                        profesionales.</li>
+
+                    <li>👥 Crear oportunidades para desarrollar liderazgo,
+                        trabajo en equipo y organización.</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- MESA DIRECTIVA -->
+
+            <div class="card" id="mesa">
+
+                <h2>¿Cómo puedo organizarlo?</h2>
+
+                <p>
+                    Formar una Mesa Directiva la cual estará a cargo del
+                    Capítulo Estudiantil conformada por 8 integrantes,
+                    procurando una participación equitativa entre hombres
+                    y mujeres, promoviendo la inclusión y diversidad.
+                </p>
+
+                <div class="puestos">
+
+                    <div class="puesto" onclick="mostrarInfo('presidente')">
+                        <span>👤</span>
+                        Presidente(a)
+                    </div>
+
+                    <div class="puesto" onclick="mostrarInfo('vice')">
+                        <span>🤝</span>
+                        Vicepresidente(a)
+                    </div>
+
+                    <div class="puesto" onclick="mostrarInfo('secretario')">
+                        <span>📝</span>
+                        Secretario(a)
+                    </div>
+
+                    <div class="puesto" onclick="mostrarInfo('tesorero')">
+                        <span>💰</span>
+                        Tesorero(a)
+                    </div>
+
+                    <div class="puesto" onclick="mostrarInfo('webmaster')">
+                        <span>💻</span>
+                        Web Master
+                    </div>
+
+                    <div class="puesto" onclick="mostrarInfo('vocal1')">
+                        <span>⭐</span>
+                        Vocal 1
+                    </div>
+
+                    <div class="puesto" onclick="mostrarInfo('vocal2')">
+                        <span>⭐</span>
+                        Vocal 2
+                    </div>
+
+                    <div class="puesto" onclick="mostrarInfo('vocal3')">
+                        <span>⭐</span>
+                        Vocal 3
+                    </div>
+
+                </div>
+
+                <!-- AQUÍ CONSERVAS TODOS TUS DIV .info -->
+                
+                                </div>
+
+                <!-- ÁREA PARA MOSTRAR LAS FUNCIONES -->
+
+                <div id="info-puesto" class="info-puesto">
+
+                    <h3>👆 Selecciona un cargo</h3>
+
+                    <p>
+                        Da clic en cualquiera de los cargos de la Mesa
+                        Directiva para conocer sus principales funciones.
+                    </p>
+
+                </div>
+
+                <!-- presidente -->
+                <!-- vice -->
+                <!-- secretario -->
+                <!-- tesorero -->
+                <!-- webmaster -->
+                <!-- vocal1 -->
+                <!-- vocal2 -->
+                <!-- vocal3 -->
+
+            </div>
+
+
+            <!-- REQUISITOS -->
+
+            <div class="card" id="requisitos">
+
+                <h2>Requisitos</h2>
+
+                <ul>
+
+                    <li>Ser alumno(a) activo y regular de Ingeniería en
+                        Sistemas Computacionales.</li>
+
+                    <li>Contar con promedio mínimo de 85.</li>
+
+                    <li>Demostrar liderazgo, iniciativa y responsabilidad.</li>
+
+                    <li>Tener habilidades para el trabajo en equipo.</li>
+
+                    <li>
+                        Respetar el Reglamento de Estudiantes del
+                        Tecnológico Nacional de México.
+
+                        <br>
+
+                        <a href="https://www.cdmadero.tecnm.mx/images/PDF/reglamento_estudiantes_tecnm_2023.pdf"
+                           target="_blank"
+                           class="btn-reglamento">
+                            📄 Ver Reglamento
+                        </a>
+
+                    </li>
+
+                    <li>Comprometerse con el fortalecimiento del
+                        Capítulo Estudiantil.</li>
+
+                    <li>Llenar el formato de registro con los integrantes
+                        de la planilla.</li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PLAN -->
+
+            <div class="card" id="plan">
+
+                <h2>Plan de Trabajo</h2>
+
+                <p>
+                    Los aspirantes deberán presentar un plan de trabajo
+                    con duración de 32 semanas que incluya:
+                </p>
+
+                <ul>
+
+                    <li>Actividades académicas, tecnológicas y de vinculación.</li>
+
+                    <li>Proyectos y eventos para beneficio de la
+                        Comunidad Tecnológica.</li>
+
+                    <li>Acciones orientadas al desarrollo profesional estudiantil.</li>
+
+                </ul>
+
+                <p class="nota">
+                    El plan será evaluado por el cuerpo académico del
+                    Departamento de Sistemas y Computación.
+                </p>
+
+
+                <div class="botones">
+
+                    <a href="registro.pdf" class="btn">
+                        📄 Descargar formato de Registro
                     </a>
 
-                </li>
+                    <a href="plan.pdf" class="btn">
+                        📋 Descargar Plan de Trabajo
+                    </a>
 
-                <li>Comprometerse con el fortalecimiento del
-                    Capítulo Estudiantil.</li>
+                </div>
 
-                <li>Llenar el formato de registro con los integrantes
-                    de la planilla.</li>
-
-            </ul>
-
-        </div>
+            </div>
 
 
-        <!-- PLAN -->
+            <!-- CALENDARIO -->
 
-        <div class="card" id="plan">
+            <div class="card" id="calendario">
 
-            <h2>Plan de Trabajo</h2>
+                <h2>Calendario de Actividades</h2>
 
-            <p>
-                Los aspirantes deberán presentar un plan de trabajo
-                con duración de 32 semanas que incluya:
-            </p>
+                <p>
+                    Calendario estratégico correspondiente al proceso
+                    de renovación de la Mesa Directiva del Capítulo Estudiantil.
+                </p>
 
-            <ul>
+                <div class="tabla-contenedor">
 
-                <li>Actividades académicas, tecnológicas y de vinculación.</li>
+                    <!-- AQUÍ CONSERVAS TU TABLA COMPLETA -->
+                    <table>
 
-                <li>Proyectos y eventos para beneficio de la
-                    Comunidad Tecnológica.</li>
+                        <thead>
 
-                <li>Acciones orientadas al desarrollo profesional estudiantil.</li>
+                            <tr>
+                                <th>Periodo</th>
+                                <th>Acción Estratégica</th>
+                                <th>Detalle Operativo e Impacto</th>
+                                <th>Responsable Directo</th>
+                            </tr>
 
-            </ul>
+                        </thead>
 
-            <p class="nota">
-                El plan será evaluado por el cuerpo académico del
-                Departamento de Sistemas y Computación.
-            </p>
+                        <tbody>
 
+                            <tr>
+                                <td><strong>Mayo 2026</strong></td>
+                                <td>Aviso de Próxima Renovación</td>
+                                <td>
+                                    Publicación anticipada del proceso de renovación antes del cierre de clases,
+                                    con el propósito de que los interesados puedan conformar sus planillas
+                                    durante el periodo vacacional.
+                                </td>
+                                <td>Docente Asesor</td>
+                            </tr>
 
-            <div class="botones">
+                            <tr>
+                                <td><strong>2026</strong></td>
+                                <td>Lanzamiento de la Convocatoria Oficial</td>
+                                <td>
+                                    Inicio formal de la convocatoria y difusión masiva dirigida a los nuevos
+                                    candidatos, considerando requisitos como promedio mínimo de 85,
+                                    regularidad académica y presentación del Plan Anual.
+                                </td>
+                                <td>Docente Asesor / Jefe de Departamento</td>
+                            </tr>
 
-                <a href="registro.pdf" class="btn">
-                    📄 Descargar formato de Registro
-                </a>
+                            <tr>
+                                <td><strong>Septiembre 2026</strong></td>
+                                <td>Periodo de Registro de Planillas</td>
+                                <td>
+                                    Recepción y revisión de documentación oficial, cartas de motivos y
+                                    estructura organizacional correspondiente a los cinco cargos clave
+                                    de la mesa directiva.
+                                </td>
+                                <td>Aspirantes a Planilla</td>
+                            </tr>
 
-                <a href="plan.pdf" class="btn">
-                    📋 Descargar Plan de Trabajo
-                </a>
+                            <tr>
+                                <td><strong>Septiembre 2026</strong></td>
+                                <td>Validación Jurídica y Académica</td>
+                                <td>
+                                    Proceso de revisión y validación oficial realizado por el asesor,
+                                    con el fin de verificar que las planillas cumplan con los requisitos
+                                    académicos y normativos establecidos.
+                                </td>
+                                <td>Docente Asesor</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Septiembre 2026</strong></td>
+                                <td>Periodo de Proselitismo y Difusión</td>
+                                <td>
+                                    Presentación de propuestas de trabajo, visitas a grupos de Ingeniería
+                                    en Sistemas Computacionales y difusión de actividades mediante medios
+                                    digitales e institucionales.
+                                </td>
+                                <td>Planillas Aceptadas</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Septiembre 2026</strong></td>
+                                <td>Jornada Electoral (Votaciones)</td>
+                                <td>
+                                    Desarrollo de una votación abierta, directa y transparente,
+                                    dirigida a la comunidad estudiantil de Sistemas Computacionales.
+                                </td>
+                                <td>Comité Electoral / Alumnos</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Octubre 2026</strong></td>
+                                <td>Periodo de Entrega–Recepción</td>
+                                <td>
+                                    Proceso de transición administrativa entre la mesa saliente
+                                    y la mesa entrante, incluyendo entrega de bitácoras,
+                                    accesos institucionales y recursos de tesorería.
+                                </td>
+                                <td>Mesa Saliente / Mesa Entrante</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Aniversario</strong></td>
+                                <td>Toma de Protesta Oficial</td>
+                                <td>
+                                    Acto protocolario encabezado por la Dirección del ITCM
+                                    para formalizar el inicio de funciones de la nueva gestión
+                                    por un periodo de un año.
+                                </td>
+                                <td>Dirección del ITCM / Nueva Mesa Directiva</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
 
             </div>
 
         </div>
 
 
-        <!-- CALENDARIO -->
+        <!-- FOOTER -->
 
-        <div class="card" id="calendario">
-
-            <h2>Calendario de Actividades</h2>
+        <footer class="footer">
 
             <p>
-                Calendario estratégico correspondiente al proceso
-                de renovación de la Mesa Directiva del Capítulo Estudiantil.
+                Instituto Tecnológico de Ciudad Madero
             </p>
 
-            <div class="tabla-contenedor">
+            <p>
+                Departamento de Sistemas y Computación
+            </p>
 
-                <!-- AQUÍ CONSERVAS TU TABLA COMPLETA -->
-                <table>
+            <p>
+                Capítulo Estudiantil | Ingeniería en Sistemas Computacionales
+            </p>
 
-                            <thead>
+            <p class="copyright">
+                © 2026 Todos los derechos reservados
+            </p>
 
-                                <tr>
-                                    <th>Periodo</th>
-                                    <th>Acción Estratégica</th>
-                                    <th>Detalle Operativo e Impacto</th>
-                                    <th>Responsable Directo</th>
-                                </tr>
-
-                            </thead>
-
-                            <tbody>
-
-                                <tr>
-                                    <td><strong>Mayo 2026</strong></td>
-                                    <td>Aviso de Próxima Renovación</td>
-                                    <td>
-                                        Publicación anticipada del proceso de renovación antes del cierre de clases,
-                                        con el propósito de que los interesados puedan conformar sus planillas
-                                        durante el periodo vacacional.
-                                    </td>
-                                    <td>Docente Asesor</td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>2026</strong></td>
-                                    <td>Lanzamiento de la Convocatoria Oficial</td>
-                                    <td>
-                                        Inicio formal de la convocatoria y difusión masiva dirigida a los nuevos
-                                        candidatos, considerando requisitos como promedio mínimo de 85,
-                                        regularidad académica y presentación del Plan Anual.
-                                    </td>
-                                    <td>Docente Asesor / Jefe de Departamento</td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>Septiembre 2026</strong></td>
-                                    <td>Periodo de Registro de Planillas</td>
-                                    <td>
-                                        Recepción y revisión de documentación oficial, cartas de motivos y
-                                        estructura organizacional correspondiente a los cinco cargos clave
-                                        de la mesa directiva.
-                                    </td>
-                                    <td>Aspirantes a Planilla</td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>Septiembre 2026</strong></td>
-                                    <td>Validación Jurídica y Académica</td>
-                                    <td>
-                                        Proceso de revisión y validación oficial realizado por el asesor,
-                                        con el fin de verificar que las planillas cumplan con los requisitos
-                                        académicos y normativos establecidos.
-                                    </td>
-                                    <td>Docente Asesor</td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>Septiembre 2026</strong></td>
-                                    <td>Periodo de Proselitismo y Difusión</td>
-                                    <td>
-                                        Presentación de propuestas de trabajo, visitas a grupos de Ingeniería
-                                        en Sistemas Computacionales y difusión de actividades mediante medios
-                                        digitales e institucionales.
-                                    </td>
-                                    <td>Planillas Aceptadas</td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>Septiembre 2026</strong></td>
-                                    <td>Jornada Electoral (Votaciones)</td>
-                                    <td>
-                                        Desarrollo de una votación abierta, directa y transparente,
-                                        dirigida a la comunidad estudiantil de Sistemas Computacionales.
-                                    </td>
-                                    <td>Comité Electoral / Alumnos</td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>Octubre 2026</strong></td>
-                                    <td>Periodo de Entrega–Recepción</td>
-                                    <td>
-                                        Proceso de transición administrativa entre la mesa saliente
-                                        y la mesa entrante, incluyendo entrega de bitácoras,
-                                        accesos institucionales y recursos de tesorería.
-                                    </td>
-                                    <td>Mesa Saliente / Mesa Entrante</td>
-                                </tr>
-
-                                <tr>
-                                    <td><strong>Aniversario</strong></td>
-                                    <td>Toma de Protesta Oficial</td>
-                                    <td>
-                                        Acto protocolario encabezado por la Dirección del ITCM
-                                        para formalizar el inicio de funciones de la nueva gestión
-                                        por un periodo de un año.
-                                    </td>
-                                    <td>Dirección del ITCM / Nueva Mesa Directiva</td>
-                                </tr>
-
-                            </tbody>
-
-                        </table>
-
-            </div>
-
-        </div>
-
-    </div>
+        </footer>
 
 
-    <!-- FOOTER -->
+        <!-- JAVASCRIPT -->
 
-    <footer class="footer">
+        <script>
 
-        <p>
-            Instituto Tecnológico de Ciudad Madero
-        </p>
+    function mostrarInfo(puesto) {
 
-        <p>
-            Departamento de Sistemas y Computación
-        </p>
+        const info = document.getElementById("info-puesto");
 
-        <p>
-            Capítulo Estudiantil | Ingeniería en Sistemas Computacionales
-        </p>
+        if (puesto === "presidente") {
 
-        <p class="copyright">
-            © 2026 Todos los derechos reservados
-        </p>
+            info.innerHTML = `
+                <h3>👤 Presidente(a)</h3>
 
-    </footer>
+                <p><strong>Funciones principales:</strong></p>
 
+                <ul>
+                    <li>Representar oficialmente al Capítulo Estudiantil.</li>
 
-    <!-- JAVASCRIPT -->
+                    <li>Dirigir y coordinar las reuniones de la Mesa Directiva.</li>
 
-    <script>
+                    <li>Coordinar y supervisar las actividades del Capítulo Estudiantil.</li>
 
-        function mostrarInfo(id) {
+                    <li>Promover la participación activa de los estudiantes.</li>
 
-            let infos = document.querySelectorAll(".info");
+                    <li>Dar seguimiento a los acuerdos y proyectos establecidos.</li>
 
-            infos.forEach(function (info) {
-                info.style.display = "none";
-            });
+                    <li>Coordinar el trabajo de los integrantes de la Mesa Directiva.</li>
 
-            let elemento = document.getElementById(id);
-
-            elemento.style.display = "block";
-
-            elemento.scrollIntoView({
-                behavior: "smooth",
-                block: "center"
-            });
-
+                    <li>Gestionar la comunicación con autoridades y docentes asesores.</li>
+                </ul>
+            `;
         }
 
-    </script>
 
-</body>
+        else if (puesto === "vice") {
+
+            info.innerHTML = `
+                <h3>🤝 Vicepresidente(a)</h3>
+
+                <p><strong>Funciones principales:</strong></p>
+
+                <ul>
+                    <li>Apoyar al Presidente(a) en sus actividades.</li>
+
+                    <li>Sustituir al Presidente(a) cuando sea necesario.</li>
+
+                    <li>Coordinar actividades y proyectos asignados.</li>
+
+                    <li>Dar seguimiento a las comisiones de trabajo.</li>
+
+                    <li>Promover la participación de los integrantes del Capítulo.</li>
+
+                    <li>Colaborar en la planeación de actividades académicas y tecnológicas.</li>
+                </ul>
+            `;
+        }
+
+
+        else if (puesto === "secretario") {
+
+            info.innerHTML = `
+                <h3>📝 Secretario(a)</h3>
+
+                <p><strong>Funciones principales:</strong></p>
+
+                <ul>
+                    <li>Elaborar las actas de las reuniones.</li>
+
+                    <li>Registrar los acuerdos tomados por la Mesa Directiva.</li>
+
+                    <li>Organizar y conservar la documentación del Capítulo.</li>
+
+                    <li>Apoyar en la elaboración de oficios y comunicaciones.</li>
+
+                    <li>Dar seguimiento a los acuerdos establecidos.</li>
+
+                    <li>Mantener actualizada la información administrativa del Capítulo.</li>
+                </ul>
+            `;
+        }
+
+
+        else if (puesto === "tesorero") {
+
+            info.innerHTML = `
+                <h3>💰 Tesorero(a)</h3>
+
+                <p><strong>Funciones principales:</strong></p>
+
+                <ul>
+                    <li>Administrar y registrar los recursos económicos del Capítulo.</li>
+
+                    <li>Llevar un control transparente de ingresos y egresos.</li>
+
+                    <li>Elaborar reportes financieros cuando sea necesario.</li>
+
+                    <li>Apoyar en la planeación de recursos para eventos y actividades.</li>
+
+                    <li>Presentar informes sobre la situación financiera.</li>
+
+                    <li>Resguardar la información relacionada con los recursos administrados.</li>
+                </ul>
+            `;
+        }
+
+
+        else if (puesto === "webmaster") {
+
+            info.innerHTML = `
+                <h3>💻 Web Master</h3>
+
+                <p><strong>Funciones principales:</strong></p>
+
+                <ul>
+                    <li>Administrar y actualizar la página web del Capítulo.</li>
+
+                    <li>Publicar información sobre actividades y eventos.</li>
+
+                    <li>Apoyar en el desarrollo de plataformas digitales.</li>
+
+                    <li>Gestionar los recursos tecnológicos utilizados por el Capítulo.</li>
+
+                    <li>Apoyar en la difusión digital de las actividades.</li>
+
+                    <li>Mantener actualizada la información tecnológica del Capítulo.</li>
+                </ul>
+            `;
+        }
+
+
+        else if (puesto === "vocal1") {
+
+            info.innerHTML = `
+                <h3>⭐ Vocal 1</h3>
+
+                <p><strong>Funciones principales:</strong></p>
+
+                <ul>
+                    <li>Apoyar en la organización de actividades académicas.</li>
+
+                    <li>Participar en la planeación de eventos.</li>
+
+                    <li>Colaborar con las diferentes comisiones de trabajo.</li>
+
+                    <li>Representar las opiniones de los estudiantes.</li>
+
+                    <li>Apoyar en proyectos especiales del Capítulo.</li>
+                </ul>
+            `;
+        }
+
+
+        else if (puesto === "vocal2") {
+
+            info.innerHTML = `
+                <h3>⭐ Vocal 2</h3>
+
+                <p><strong>Funciones principales:</strong></p>
+
+                <ul>
+                    <li>Apoyar en la difusión de actividades y eventos.</li>
+
+                    <li>Colaborar en la integración de los estudiantes.</li>
+
+                    <li>Participar en las comisiones asignadas.</li>
+
+                    <li>Apoyar en la logística de eventos.</li>
+
+                    <li>Proponer nuevas actividades para el Capítulo.</li>
+                </ul>
+            `;
+        }
+
+
+        else if (puesto === "vocal3") {
+
+            info.innerHTML = `
+                <h3>⭐ Vocal 3</h3>
+
+                <p><strong>Funciones principales:</strong></p>
+
+                <ul>
+                    <li>Apoyar en la realización de proyectos tecnológicos.</li>
+
+                    <li>Colaborar en la organización de talleres y eventos.</li>
+
+                    <li>Participar activamente en las reuniones del Capítulo.</li>
+
+                    <li>Apoyar las actividades asignadas por la Mesa Directiva.</li>
+
+                    <li>Representar y promover la participación estudiantil.</li>
+                </ul>
+            `;
+        }
+
+
+        /* Desplazamiento suave hacia la información */
+
+        info.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+    }
+
+</script>
+        
+
+    </body>
 
 </html>
